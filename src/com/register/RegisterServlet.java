@@ -40,7 +40,7 @@ public class RegisterServlet extends HttpServlet {
 			Class.forName("com.mysql.jdbc.Driver");
 			
 			Connection con=DriverManager.getConnection(  
-					"jdbc:mysql://localhost:3306/mydb?characterEncoding=utf8","root","Victory#15193");  
+					"jdbc:mysql://localhost:3306/mydb?characterEncoding=utf8","root","********");  
 			
 			
 			PreparedStatement psmt=con.prepareStatement("insert into user (name,city) values (?,?)");
